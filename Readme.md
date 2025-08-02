@@ -13,9 +13,9 @@
 I'm passionate about building intelligent AI agents and powering smart solutions. Fueled by curiosity and a dash of insomnia, I thrive in creating, experimenting, and sharing open-source projects.
 </p>
 
-- 🔭 I’m currently working on **Multi-Agent Stock Analyzer** and **WanderLens**
+- 🔭 I’m currently working on **Multi-Agent Stock Analyzer** and **Fine-Tuning LLMs**
 - 🌱 I’m learning advanced AI architectures and automation workflows.
-- 💬 Ask me about AI, automation, and knowledge graphs.
+- 💬 Ask me about AI, automation, and physics
 - 📫 Reach me at: [prathammj903@gmail.com](mailto:prathammj903@gmail.com)
 - 💼 Connect with me: [LinkedIn](https://www.linkedin.com/in/pratham-m-j-384a07298/)
 - ⚡ Fun fact: I love turning insomnia into innovation!
