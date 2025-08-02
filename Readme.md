@@ -2,7 +2,7 @@
 <h3 align="center">Building AI Agents | Powering Solutions</h3>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Location-Mandya,%20Karnataka,%20India-blue" />
+  <img src="https://img.shields.io/badge/Location-Bengaluru,%20Karnataka,%20India-blue" />
   <img src="https://img.shields.io/badge/Pronouns-he%2Fhim-blueviolet" />
   <img src="https://img.shields.io/badge/PES%20UNIVERSITY-Student-green" />
 </p>
@@ -16,7 +16,7 @@ I'm passionate about building intelligent AI agents and powering smart solutions
 - 🔭 I’m currently working on **Multi-Agent Stock Analyzer** and **WanderLens**
 - 🌱 I’m learning advanced AI architectures and automation workflows.
 - 💬 Ask me about AI, automation, and knowledge graphs.
-- 📫 Reach me at: [prathammj2005@gmail.com](mailto:prathammj2005@gmail.com)
+- 📫 Reach me at: [prathammj2005@gmail.com](mailto:prathammj903@gmail.com)
 - 💼 Connect with me: [LinkedIn](https://www.linkedin.com/in/pratham-m-j-384a07298/)
 - ⚡ Fun fact: I love turning insomnia into innovation!
 
@@ -68,7 +68,7 @@ I'm passionate about building intelligent AI agents and powering smart solutions
 
 ### 📫 How to reach me
 
-- Email: [prathammj2005@gmail.com](mailto:prathammj2005@gmail.com)
+- Email: [prathammj903@gmail.com](mailto:prathammj903@gmail.com)
 - LinkedIn: [in/pratham-m-j-384a07298](https://www.linkedin.com/in/pratham-m-j-384a07298/)
 
 ---
