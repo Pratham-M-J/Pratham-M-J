@@ -2,7 +2,7 @@
 <h3 align="center">Building AI Agents | Powering Solutions</h3>
 
 <p align="center">
-  <img src="assets/binary_hacker.svg" alt="Binary hacker banner" style="max-width:100%;height:auto"/>
+  <img src="binary_hacker.svg" alt="Binary hacker banner" style="max-width:100%;height:auto"/>
 </p>
 
 <p align="center">
