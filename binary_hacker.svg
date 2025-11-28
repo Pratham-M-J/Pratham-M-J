@@ -1,104 +1,108 @@
-<!-- Save as assets/binary_hacker.svg -->
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" preserveAspectRatio="xMidYMid slice">
-  <!-- Background gradient -->
-  <defs>
-    <linearGradient id="g1" x1="0" x2="0" y1="0" y2="1">
-      <stop offset="0%" stop-color="#ff2d2d" stop-opacity="0.98"/>
-      <stop offset="35%" stop-color="#8b0000" stop-opacity="0.95"/>
-      <stop offset="100%" stop-color="#050505" stop-opacity="1"/>
-    </linearGradient>
+#!/usr/bin/env python3
+"""
+Image to ASCII Art Converter for SVG README
+Converts an image to colored ASCII art suitable for SVG embedding
+"""
 
-    <!-- Binary pattern as repeating text -->
-    <pattern id="binaryPattern" patternUnits="userSpaceOnUse" width="20" height="20">
-      <rect width="100%" height="100%" fill="transparent"/>
-      <text x="0" y="14" font-family="monospace" font-size="12" fill="#ffb3b3">01011010 10100101</text>
-    </pattern>
+from PIL import Image
+import sys
 
-    <!-- soft vignette -->
-    <radialGradient id="vign" cx="50%" cy="40%" r="75%">
-      <stop offset="0%" stop-color="#00000000"/>
-      <stop offset="100%" stop-color="#000000aa"/>
-    </radialGradient>
+# ASCII characters from darkest to lightest
+ASCII_CHARS = ['@', '#', 'M', 'W', '&', '8', 'B', '%', '*', 'o', 'a', 'h', 'k', 'b', 'd', 'p', 'q', 'w', 'm', 'Z', 'O', 'Q', 'L', 'C', 'J', 'U', 'Y', 'X', 'z', 'c', 'v', 'u', 'n', 'x', 'r', 'j', 'f', 't', '/', '\\', '|', '(', ')', '1', '{', '}', '[', ']', '?', '-', '_', '+', '~', '<', '>', 'i', '!', 'l', 'I', ';', ':', ',', '"', '^', '`', '.', ' ']
 
-    <!-- silhouette mask: simple hacker shape (head, shoulders, arm with laptop) -->
-    <mask id="silhouetteMask">
-      <rect width="100%" height="100%" fill="black"/>
-      <!-- White shape will reveal binary inside shape -->
-      <g transform="translate(260,40)" fill="white">
-        <!-- head -->
-        <ellipse cx="220" cy="70" rx="48" ry="48"/>
-        <!-- hood -->
-        <path d="M170 110 q55 60 120 0 q30 -40 -5 -70 q-80 -40 -130 20 q-10 20 -5 50 z"/>
-        <!-- torso -->
-        <path d="M130 140 q160 80 240 0 q10 -12 18 18 q-4 50 -20 80 q-120 32 -220 0 q-20 -40 -18 -98 z"/>
-        <!-- laptop (in hand) -->
-        <rect x="260" y="190" width="160" height="10" rx="2"/>
-        <rect x="260" y="140" width="160" height="60" rx="6"/>
-      </g>
-    </mask>
-  </defs>
+def resize_image(image, new_width=100):
+    """Resize image while maintaining aspect ratio"""
+    width, height = image.size
+    aspect_ratio = height / float(width)
+    new_height = int(aspect_ratio * new_width * 0.55)  # Adjust for character height
+    return image.resize((new_width, new_height))
 
-  <!-- glossy red to black background -->
-  <rect width="100%" height="100%" fill="url(#g1)"/>
+def grayscale_to_ascii(image):
+    """Convert grayscale image to ASCII characters"""
+    pixels = image.getdata()
+    ascii_str = ""
+    for pixel in pixels:
+        ascii_str += ASCII_CHARS[pixel * len(ASCII_CHARS) // 256]
+    return ascii_str
 
-  <!-- subtle network lines behind -->
-  <g opacity="0.12" stroke="#007acc" stroke-width="1" fill="none">
-    <path d="M40 90 L200 60 L360 120 L540 80 L760 130 L980 70 L1160 110" />
-    <path d="M60 200 L220 170 L420 220 L620 180 L820 240 L1040 210" />
-    <circle cx="200" cy="60" r="4" fill="#007acc" opacity="0.7"/>
-    <circle cx="360" cy="120" r="4" fill="#007acc" opacity="0.7"/>
-    <circle cx="540" cy="80" r="4" fill="#007acc" opacity="0.7"/>
-    <circle cx="760" cy="130" r="4" fill="#007acc" opacity="0.7"/>
-  </g>
+def image_to_ascii(image_path, new_width=100):
+    """Main function to convert image to ASCII art"""
+    try:
+        image = Image.open(image_path)
+    except Exception as e:
+        print(f"Unable to open image: {e}")
+        return None
+    
+    # Resize and convert to grayscale
+    image = resize_image(image, new_width)
+    grayscale_image = image.convert('L')
+    
+    # Convert to ASCII
+    ascii_str = grayscale_to_ascii(grayscale_image)
+    
+    # Split into lines
+    img_width = grayscale_image.width
+    ascii_lines = []
+    for i in range(0, len(ascii_str), img_width):
+        ascii_lines.append(ascii_str[i:i + img_width])
+    
+    return ascii_lines, grayscale_image
 
-  <!-- Binary fill clipped by silhouette -->
-  <g mask="url(#silhouetteMask)">
-    <rect width="100%" height="100%" fill="url(#vign)"/>
-    <rect width="100%" height="100%" fill="url(#g1)" opacity="0.14"/>
-    <!-- fill silhouette with the binary pattern repeated -->
-    <rect x="0" y="0" width="100%" height="100%" fill="url(#binaryPattern)"/>
-    <!-- overlay slight glow -->
-    <g opacity="0.16" fill="#ffffff">
-      <rect x="0" y="0" width="100%" height="100%"/>
-    </g>
-  </g>
+def generate_svg_with_colors(image_path, output_path, new_width=30):
+    """Generate SVG with colored ASCII art based on original image colors"""
+    try:
+        image = Image.open("img.jpg")
+    except Exception as e:
+        print(f"Unable to open image: {e}")
+        return
+    
+    # Resize both color and grayscale versions
+    image = resize_image(image, new_width)
+    color_image = image.convert('RGB')
+    grayscale_image = image.convert('L')
+    
+    # Get ASCII characters
+    ascii_str = grayscale_to_ascii(grayscale_image)
+    
+    img_width = grayscale_image.width
+    img_height = grayscale_image.height
+    
+    # Get color data
+    color_pixels = list(color_image.getdata())
+    
+    # Generate SVG text elements
+    svg_elements = []
+    y_pos = 15
+    
+    for row in range(img_height):
+        for col in range(img_width):
+            idx = row * img_width + col
+            char = ascii_str[idx]
+            if char == ' ':
+                continue
+            
+            r, g, b = color_pixels[idx]
+            x_pos = 15 + col * 10
+            
+            svg_elements.append(
+                f'<text x="{x_pos}" y="{y_pos}" fill="rgb({r},{g},{b})" '
+                f'font-size="10px" text-anchor="middle" font-weight="bold">{char}</text>'
+            )
+        
+        y_pos += 10
+    
+    return '\n'.join(svg_elements), img_width * 10, img_height * 10
 
-  <!-- Central composition: title + subtitle -->
-  <g transform="translate(40,26)">
-    <text x="0" y="44" font-family="Inter, Roboto, sans-serif" font-size="36" fill="#e8eef7" font-weight="700">
-      AI Compliance Engine for ADGM Regulations
-    </text>
-    <text x="0" y="84" font-family="Inter, Roboto, sans-serif" font-size="18" fill="#bfe6ff" letter-spacing="1">
-      MULTI-AGENT • REGULATORY RAG • AUTOMATED DOCUMENT CORRECTION
-    </text>
-  </g>
-
-  <!-- document icons left and check icons right (simple lines connecting to silhouette) -->
-  <g fill="none" stroke="#8fd4ff" stroke-width="2" opacity="0.95">
-    <!-- left documents -->
-    <rect x="42" y="120" width="60" height="72" rx="6"/>
-    <line x1="68" y1="138" x2="120" y2="160"/>
-    <rect x="42" y="210" width="60" height="72" rx="6"/>
-    <line x1="68" y1="228" x2="120" y2="260"/>
-    <!-- right checks -->
-    <circle cx="1080" cy="150" r="26" stroke-width="3" fill="none"/>
-    <path d="M1068 150 l8 8 l16 -18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <circle cx="1080" cy="230" r="26" stroke-width="3" fill="none"/>
-    <path d="M1068 230 l8 8 l16 -18" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
-    <!-- connectors to silhouette -->
-    <path d="M102 160 L260 140" />
-    <path d="M102 260 L260 200" />
-    <path d="M940 150 L420 170" />
-    <path d="M940 230 L420 210" />
-  </g>
-
-  <!-- subtle top-right tagline -->
-  <text x="760" y="40" font-family="Inter, Roboto, sans-serif" font-size="14" fill="#cfeeff" opacity="0.9">
-    Multi-Agent • Regulatory RAG • Automated Document Correction
-  </text>
-
-  <!-- small credits (optional) -->
-  <text x="16" y="344" font-family="monospace" font-size="10" fill="#ffdede" opacity="0.7">
-    © Pratham — ADGM Corporate Agent
-  </text>
-</svg>
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python ascii_converter.py <image_path> [width]")
+        sys.exit(1)
+    
+    image_path = sys.argv[1]
+    width = int(sys.argv[2]) if len(sys.argv) > 2 else 30
+    
+    svg_content, svg_width, svg_height = generate_svg_with_colors(image_path, None, width)
+    
+    if svg_content:
+        print(f"<!-- SVG Dimensions: {svg_width}x{svg_height} -->")
+        print(svg_content)
