@@ -86,3 +86,16 @@ Currently focused on large-scale compute using Go at **Akamai Technologies**. I 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Pratham-M-J&theme=react-dark&hide_border=true&bg_color=141321" alt="Contribution Graph" width="100%" />
 </div>
+<!-- FOOTER SVG -->
+<svg width="860" height="50" viewBox="0 0 860 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="footergrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#7b2fff;stop-opacity:0.3"/>
+      <stop offset="100%" style="stop-color:#00d4ff;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+  <rect width="860" height="1" y="0" fill="url(#footergrad)"/>
+  <text x="430" y="32" text-anchor="middle" font-family="'Courier New', monospace" font-size="11" fill="#4466aa" letter-spacing="4">BUILD. BREAK. LEARN. REPEAT.</text>
+</svg>
+</div>
