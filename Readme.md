@@ -17,9 +17,9 @@
 
 Currently focused on large-scale compute using Go at **Akamai Technologies**. I also design robust developer tooling and complex AI workflows—including multi-agent networks and RAG pipelines.
 
-*   🏢 **Currently Interning at:** Akamai (Distributed Computing & Systems Design)
-*   💻 **Currently Building:** **ErrorX** (LangGraph bug injection engine) & **Eco-Score.AI** (Autonomous environmental analysis engine)
-*   🧠 **Interests:** Distributed Systems, Cloud Architecture (Pub/Sub, P2P), LLM Pipelines, Agentic Frameworks
+*   **Currently Interning at:** Akamai (Distributed Computing & Systems Design)
+*   **Currently Building:** **ErrorX** (LangGraph bug injection engine) & **Eco-Score.AI** (Autonomous environmental analysis engine)
+*   **Interests:** Distributed Systems, Cloud Architecture (Pub/Sub, P2P), LLM Pipelines, Agentic Frameworks
 
 ---
 
