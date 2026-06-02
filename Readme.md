@@ -86,14 +86,19 @@ Currently focused on large-scale compute using Go at **Akamai Technologies**. I 
 ### 📈 GitHub Analytics
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Pratham-M-J&show_icons=true&theme=radical&hide_border=true&include_all_commits=true&count_private=true" alt="GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Pratham-M-J&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api?username=Pratham-M-J&show_icons=true&theme=radical&hide_border=true&include_all_commits=true" alt="GitHub Stats" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=Pratham-M-J&layout=compact&theme=radical&hide_border=true" alt="Top Languages" width="48%" />
 </div>
 <br/>
 <div align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Pratham-M-J&theme=radical&hide_border=true" alt="GitHub Streak" width="100%" />
+  <img src="https://streak-stats.demolab.com/?user=Pratham-M-J&theme=radical&hide_border=true" alt="GitHub Streak" width="100%" />
 </div>
 
+---
+
+<div align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Pratham-M-J&theme=react-dark&hide_border=true&bg_color=141321" alt="Contribution Graph" width="100%" />
+</div>
 ---
 
 <div align="center">
