@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="pic.jpg" alt="Pratham M J Banner" style="max-width:100%; height:auto; border-radius: 10px; margin-bottom: 20px;" />
+  <img src="pic.png" alt="Pratham M J Banner" style="max-width:100%; height:auto; border-radius: 10px; margin-bottom: 20px;" />
 
   <h1>Hi there, I'm Pratham M J 👋</h1>
   <h3>Distributed Systems Intern @ Akamai &nbsp;·&nbsp; AI Agent Engineer &nbsp;·&nbsp; PES University</h3>
