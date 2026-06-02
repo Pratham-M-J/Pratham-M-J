@@ -2,7 +2,7 @@
   <img src="pic.png" alt="Pratham M J Banner" style="max-width:100%; height:auto; border-radius: 10px; margin-bottom: 20px;" />
 
   <h1>Hi there, I'm Pratham M J 👋</h1>
-  <h3>Distributed Systems Intern @ Akamai &nbsp;·&nbsp; AI Agent Engineer &nbsp;·&nbsp; PES University</h3>
+  <h3>Distributed Systems Intern @ Akamai &nbsp;·&nbsp; AI Engineer &nbsp;·&nbsp; PES University</h3>
 
   <p align="center">
     <a href="https://www.linkedin.com/in/pratham-m-j-384a07298/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
@@ -94,11 +94,6 @@ Currently focused on large-scale compute using Go at **Akamai Technologies**. I 
   <img src="https://streak-stats.demolab.com/?user=Pratham-M-J&theme=radical&hide_border=true" alt="GitHub Streak" width="100%" />
 </div>
 
----
-
-<div align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Pratham-M-J&theme=react-dark&hide_border=true&bg_color=141321" alt="Contribution Graph" width="100%" />
-</div>
 ---
 
 <div align="center">
