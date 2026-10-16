@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:00d4ff,50:7b2fff,100:ff2d95&height=240&section=header&text=Pratham%20M%20J&fontSize=64&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Distributed%20Systems%20%C2%B7%20AI%20Engineer%20%C2%B7%20Builder&descSize=20&descAlignY=58" width="100%" alt="Header" />
+<img src="banner.png" alt="Pratham M J Banner" width="100%" />
 
 <a href="https://git.io/typing-svg">
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=Building+scalable+distributed+infrastructure+%E2%9A%A1;Writing+Go+for+large-scale+compute+%F0%9F%90%B9;Designing+multi-agent+AI+workflows+%F0%9F%A4%96;Caching%2C+coalescing%2C+replicating+%E2%80%94+repeat+%F0%9F%94%81" alt="Typing SVG" />
@@ -12,7 +12,7 @@
   <a href="https://www.linkedin.com/in/pratham-m-j-384a07298/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:prathammj903@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
   <a href="https://medium.com/@prathammj903"><img src="https://img.shields.io/badge/Medium-000000?style=for-the-badge&logo=medium&logoColor=white" alt="Medium" /></a>
- <img src="banner.png" alt="Pratham M J Banner" width="100%" />
+  <img src="https://img.shields.io/badge/Bengaluru,%20India-0A66C2?style=for-the-badge&logo=googlemaps&logoColor=white" alt="Location" />
 </p>
 
 </div>
