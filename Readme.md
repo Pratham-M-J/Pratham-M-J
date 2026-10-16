@@ -8,8 +8,6 @@
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=Pratham-M-J&label=Profile%20Views&color=7b2fff&style=for-the-badge" alt="Profile views" />
-
 <p align="center">
   <a href="https://www.linkedin.com/in/pratham-m-j-384a07298/"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="mailto:prathammj903@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email" /></a>
@@ -156,6 +154,18 @@ func main() {
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Pratham-M-J&theme=react-dark&hide_border=true&bg_color=0d1117&color=00d4ff&line=7b2fff&point=ff2d95" alt="Contribution Graph" width="100%" />
+</div>
+
+---
+
+## 🐍 Contribution Snake
+
+<div align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Pratham-M-J/Pratham-M-J/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Pratham-M-J/Pratham-M-J/output/github-contribution-grid-snake.svg" />
+    <img alt="Contribution snake animation" src="https://raw.githubusercontent.com/Pratham-M-J/Pratham-M-J/output/github-contribution-grid-snake-dark.svg" />
+  </picture>
 </div>
 
 ---
